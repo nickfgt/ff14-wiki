@@ -1,0 +1,57 @@
+body {
+    background-color: #222222;
+}
+* {
+    color: #fff;
+}
+a:visited {
+    color: rgb(219, 219, 220);
+}
+/* 导航栏 */
+.nav-all {
+    width: 100%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-top-left {
+    width: 100%;
+}
+.nav-top-left ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.nav-top-search {
+    display: flex;
+}
+.nav-top-search-left {
+    width: 23em;
+    height: 1.8em;
+    border: 0.1em solid #fff;
+    border-top-left-radius: 0.9em;
+    border-bottom-left-radius: 0.9em;
+}
+.nav-top-search-right {
+    width: 3.5em;
+    height: 1.8em;
+    border: 0.1em solid #fff;
+    border-left: none;
+    border-top-right-radius: 0.9em;
+    border-bottom-right-radius: 0.9em;
+}
+.nav-bottom ul {
+    display: flex;
+}
+.nav-bottom {
+    background-image: linear-gradient(90deg, rgb(41, 50, 39), rgb(47, 88, 113), rgb(112, 73, 37));
+}
