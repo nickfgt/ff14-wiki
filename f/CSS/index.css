@@ -41,6 +41,14 @@ a:visited {
     border-top-left-radius: 0.9em;
     border-bottom-left-radius: 0.9em;
 }
+.nav-top-search-left input{
+    width: 95%;
+    margin-left: 5%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
 .nav-top-search-right {
     width: 3.5em;
     height: 1.8em;
@@ -49,9 +57,24 @@ a:visited {
     border-top-right-radius: 0.9em;
     border-bottom-right-radius: 0.9em;
 }
+.nav-top-search-right img{
+    width: 1.5em;
+    position: relative;
+    top: .1em;
+    left: .8em;
+}
 .nav-bottom ul {
+    width: 100%;
     display: flex;
+    justify-content: space-around;
 }
 .nav-bottom {
+    margin-left: 5%;
+    width: 95%;
+    margin-top: 2em;
+    height: 2.5em;
+    font-size: .8em;
+    line-height: 2.5em;
+    border-radius: .7em;
     background-image: linear-gradient(90deg, rgb(41, 50, 39), rgb(47, 88, 113), rgb(112, 73, 37));
 }
