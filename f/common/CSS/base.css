@@ -1,0 +1,31 @@
+/* 基础样式 当前项目个性化全局样式 */
+/* 通用宽度 */
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.center {
+    width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 防止缩放变形 */
+body {
+    min-width: 1000px;
+}
+.breadcrumb {
+    padding: 10px 0;
+}
+.breadcrumb a {
+    color: #000;
+}
+body {
+    background-color: #222222;
+}
+* {
+    color: #fff;
+}
+a:visited {
+    color: rgb(219, 219, 220);
+}

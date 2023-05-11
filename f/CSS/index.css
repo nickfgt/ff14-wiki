@@ -1,13 +1,3 @@
-body {
-    position: relative;
-    background-color: #222222;
-}
-* {
-    color: #fff;
-}
-a:visited {
-    color: rgb(219, 219, 220);
-}
 /* 导航栏 */
 .nav-all {
     z-index: 2;

@@ -6,92 +6,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/pubic.css">
+    <link rel="stylesheet" href="./common/CSS/base.css">
+    <link rel="stylesheet" href="./common/CSS/reset.css">
     <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./common/JS/jquery-3.6.4.min.js"></script>
+    <script src="./common/JS/common.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <!-- 顶部导航 -->
-    <nav>
-        <div class="center">
-            <div class="nav-all">
-                <div class="susu-img">
-                    <img src="./img/SUSU-LOGO.a4fc8e9.png" alt="">
-                </div>
-                <div class="nav-right">
-                    <div class="nav-top">
-                        <div class="nav-top-left">
-                            <ul>
-                                <li><a href="">实用站点</a> </li>
-                                <li><a href="">资料查询</a> </li>
-                                <li><a href="">萌新必看</a> </li>
-                                <li><a href="">关于我们</a> </li>
-                            </ul>
-                        </div>
-                        <div class="nav-top-search">
-                            <div class="nav-top-search-left">
-                                <input type="text" placeholder="搜索功能建设中,仅对站内文章进行搜索">
-                            </div>
-                            <div class="nav-top-search-right">
-                                <div>
-                                    <a href=""><img src="./img/search.4e52673.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav-bottom">
-                        <ul>
-                            <li><a href="">青魔法师</a></li>
-                            <li>|</li>
-                            <li><a href="">重建伊修加德</a></li>
-                            <li>|</li>
-                            <li><a href="">古武/魂武/优武/义武</a></li>
-                            <li>|</li>
-                            <li><a href="">生产宏</a></li>
-                            <li>|</li>
-                            <li><a href="">趣味支线</a></li>
-                            <li>|</li>
-                            <li><a href="">趣味支线</a></li>
-                            <li>|</li>
-                            <li><a href="">宠物</a></li>
-                            <li>|</li>
-                            <li><a href="">管弦琴乐谱</a></li>
-                            <li>|</li>
-                            <li><a href="">风脉</a></li>
-                            <li>|</li>
-                            <li><a href="">藏宝图</a></li>
-                            <li>|</li>
-                            <li><a href="">ACT相关</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </nav>
+    <div id="header"></div>
     <!-- 主体 -->
-    <main>
-        <div class="center">
-            <!-- 页头及组件 -->
-            <header>
-                <div class="background"></div>
+    <div id="main">
+        <main>
+            <div class="center">
+                <!-- 页头及组件 -->
+                <header>
+                    <div class="background"></div>
+                    <div></div>
+                    <div></div>
+                </header>
                 <div></div>
                 <div></div>
-            </header>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </main>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </main>
+    </div>  
 </body>
-<script src="./JS/jquery-3.6.4.min.js"></script>
 <script>
-
+    $('#header').load('./components/header/header.html')
 </script>
 
 </html>
