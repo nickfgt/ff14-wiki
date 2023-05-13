@@ -13,6 +13,7 @@
 /* 防止缩放变形 */
 body {
     min-width: 1000px;
+    position: relative;
 }
 .breadcrumb {
     padding: 10px 0;
@@ -28,4 +29,13 @@ body {
 }
 a:visited {
     color: rgb(219, 219, 220);
+}
+::-webkit-scrollbar{
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+background: #222;
+}
+html{
+    overflow-x: hidden;
 }

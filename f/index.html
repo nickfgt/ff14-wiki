@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./common/CSS/base.css">
     <link rel="stylesheet" href="./common/CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/index.css">
     <script src="./common/JS/jquery-3.6.4.min.js"></script>
     <script src="./common/JS/common.js"></script>
     <title>Document</title>
@@ -19,15 +18,12 @@
     <div id="header"></div>
     <!-- 主体 -->
     <div id="main">
-        <main>
+        <main style="height: 100vh;">
+            <!-- 页头及组件 -->
+            <header>
+            </header>
             <div class="center">
-                <!-- 页头及组件 -->
-                <header>
-                    <div class="background"></div>
-                    <div></div>
-                    <div></div>
-                </header>
-                <div></div>
+                <div class="card"></div>
                 <div></div>
                 <div></div>
                 <div></div>
@@ -41,6 +37,8 @@
 <script>
     $('#header').load('./components/header/header.html')
     $('#footer').load('./components/footer/footer.html')
+    $('main header').load('./pages/main-h/main-h.html')
+    $('main .center>.card').load('./pages/card/card.html')
 </script>
 
 </html>

@@ -1,16 +1,17 @@
 #header{
 .nav-all {
     z-index: 2;
-    /* position: absolute; */
+     position: absolute; 
     top: 0;
     width: 100%;
+    min-width: 1160px;
     margin: 2% auto;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     > div.nav-right {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 1080px;
         > div.nav-top {
             display: flex;
             justify-content: space-between;

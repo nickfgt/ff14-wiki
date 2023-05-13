@@ -1,17 +1,17 @@
 @charset "UTF-8";
 #header .nav-all {
   z-index: 2;
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   width: 100%;
+  min-width: 1160px;
   margin: 2% auto;
   display: flex;
-  justify-content: space-between;
 }
 #header .nav-all > div.nav-right {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 1080px;
 }
 #header .nav-all > div.nav-right > div.nav-top {
   display: flex;
