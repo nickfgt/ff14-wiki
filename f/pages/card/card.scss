@@ -1,29 +1,52 @@
-#main main > .center {
-    overflow: visible;
+#main {
     pointer-events: none;
-    > .card {
-        width: 8.2rem;
-        height: 7rem;
-        > .module {
-            display: flex;
-            position: relative;
-            top: -6em;
-            z-index: -1;
-            > .item {
-                cursor: pointer;
-                top: 0;
-                position: absolute;
-                left: 0;
-                width: 8.2rem;
-                height: 7rem;
-                // z-index: 0;
-                border-radius: 16px;
-                &:hover {
-                  display: none;
+    > main > .center {
+        overflow: visible;
+        // pointer-events: none;
+        > .card {
+            width: 8.2rem;
+            height: 7rem;
+            > .module {
+                display: flex;
+                position: relative;
+                top: -6em;
+                z-index: -1;
+                
+                > .item {
+                    pointer-events: auto;
+                    cursor: pointer;
+                    top: 0;
+                    position: absolute;
+                    left: 0;
+                    width: 8.2rem;
+                    height: 7rem;
+                    z-index: 0;
+                    border-radius: 16px;
+                    transition: 0.3s linear;
+                    &:last-child {
+                        width: 6rem;
+                    }
+                    &:hover {
+                        width: 15rem;
+                        height: 10rem;
+                        transform: rotateZ(18deg);
+                        transform-origin: top left;
+                    }
+                    &.active {
+                        pointer-events: auto;
+                        cursor: pointer;
+                        top: 0;
+                        position: absolute;
+                        left: 0;
+                        width: 8.2rem;
+                        height: 7rem;
+                        z-index: 0;
+                        border-radius: 16px;
+                        > :last-child {
+                            width: 6rem;
+                        }
+                    }
                 }
-            }
-            > :last-child {
-                width: 6rem;
             }
         }
     }
