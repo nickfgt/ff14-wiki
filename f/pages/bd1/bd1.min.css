@@ -1,1 +1,1 @@
-#main .bd1 #bd1-items{display:none}
+#main .bd1 #bd1-items{display:flex;justify-content:space-between}#main .bd1 #bd1-items>.i-left{border:2px solid #fff}#main .bd1 #bd1-items>.i-left>:first-child>.l-top{width:26rem;height:15rem;background-color:#bebebe}
