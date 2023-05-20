@@ -23,7 +23,7 @@ body {
     color: #000;
 }
 body {
-    background-color: #222222;
+    background-color: #111111;
 }
 * {
     color: #fff;
@@ -32,11 +32,14 @@ a:visited {
     color: rgb(219, 219, 220);
 }
 ::-webkit-scrollbar{
-  background-color: #000;
+    background-color: #111111;
 }
 ::-webkit-scrollbar-thumb{
-background: #222;
+background: #588EE6;
 }
 html{
     overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 5px;
 }

@@ -9,3 +9,5 @@ $.extend({
     return params.get(value) || def
   },
 })
+
+var baseURL = "http://127.0.0.1:3000";

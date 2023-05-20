@@ -6,6 +6,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var indexRouter = require("./routes/index");
 var ContentRouter = require("./routes/Content");
+var FocusRouter = require("./routes/focus");
 //引入服务器
 
 //创建web服务器
@@ -19,6 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/", indexRouter);
 app.use("/v1/content", ContentRouter);
+app.use("/v1/focus", FocusRouter);
 
 //处理404
 app.use(function (req, res, next) {
