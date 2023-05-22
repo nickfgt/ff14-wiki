@@ -10,6 +10,7 @@
                 > :first-child {
                     position: relative;
                     > .l-top {
+                        margin-bottom: 1.5em;
                         position: relative;
                         overflow: scroll;
                         overflow-x: hidden;
@@ -38,11 +39,48 @@
                             color: rgb(88, 142, 230);
                         }
                     }
+                    > .l-bottom {
+                        width: 28rem;
+                        height: 17.5rem;
+                        background-color: #303033;
+                        border-radius: 8px;
+                        > .b-t {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 15%;
+                            border-bottom: 1px solid #fff;
+                            border-image: linear-gradient(90deg, #4c5fbf 0, #44aadf 50%, #f93) 1 1;
+                        }
+                        >#b-b{
+                            padding: 30px;
+                            padding-top: 0;
+                          >ul{
+                     
+                            display:flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            >li{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 20%;
+                                margin: 10px 0;
+                                img{
+                                    width: 40px;
+                                }
+                                span{
+                                    font-size: .8rem;
+                                }
+                            }
+                          }
+                        }
+                    }
                 }
             }
             > .i-right {
                 width: 52em;
-                height: 447px;
+                height: 545px;
                 // border: 1px solid #fff;
                 display: flex;
                 flex-direction: column;
@@ -69,7 +107,6 @@
                             display: flex;
                             justify-content: space-around;
                             > .c-line {
-                                
                                 > .line-b {
                                     position: relative;
                                     height: 12px;
@@ -111,7 +148,7 @@
                                     justify-content: space-between;
                                     background-color: rgb(30, 30, 33);
                                     align-items: start;
-                                    display:none;
+                                    display: none;
                                     > p {
                                         width: 100%;
                                         height: 50%;
@@ -130,10 +167,10 @@
                             display: flex;
                             justify-content: space-around;
                             > .w-line {
-                                >.line{
+                                > .line {
                                     position: relative;
                                     left: -3px;
-                                    top:1px;
+                                    top: 1px;
                                     height: 12px;
                                     width: 220px;
                                     border-bottom: 4px solid rgb(225, 200, 0);
@@ -152,7 +189,7 @@
                 > .r-b {
                     border-radius: 8px;
                     overflow: hidden;
-                    height: 351px;
+                    height: 445px;
                     width: 100%;
                     background-color: rgb(30, 30, 33);
                     display: flex;

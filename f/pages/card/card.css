@@ -1,23 +1,19 @@
 #main {
   pointer-events: none;
 }
-
 #main > main > .center {
   overflow: visible;
 }
-
 #main > main > .center > .card {
   width: 8.2rem;
   height: 7rem;
 }
-
 #main > main > .center > .card > .module {
   display: flex;
   position: relative;
   top: -6em;
   z-index: -1;
 }
-
 #main > main > .center > .card > .module > .item {
   pointer-events: auto;
   cursor: pointer;
@@ -30,18 +26,15 @@
   border-radius: 16px;
   transition: 0.3s linear;
 }
-
 #main > main > .center > .card > .module > .item:last-child {
   width: 6rem;
 }
-
 #main > main > .center > .card > .module > .item:hover {
   width: 15rem;
   height: 10rem;
   transform: rotateZ(18deg);
   transform-origin: top left;
 }
-
 #main > main > .center > .card > .module > .item.active {
   pointer-events: auto;
   cursor: pointer;
@@ -53,7 +46,6 @@
   z-index: 0;
   border-radius: 16px;
 }
-
 #main > main > .center > .card > .module > .item.active > :last-child {
   width: 6rem;
-}
+}/*# sourceMappingURL=card.css.map */

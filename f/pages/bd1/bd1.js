@@ -12,7 +12,7 @@ $(function (params) {
       $(this).addClass("active").siblings().removeClass("active");
       $(".b-r").scrollTop(0);
       $.get(url, { ff_id: ff_id }, (data) => {
-        console.log(data.data);
+        // console.log(data.data);
 
         $("#patch  ").html(
           data.data.map((i) => {
@@ -115,7 +115,7 @@ $(function (params) {
   $.get(url_v, (data) => {
     // console.log(data.data);
     data.data.map((i) => {
-      console.log(i);
+      // console.log(i);
       const { versionNumber, internationalService, chineseService } = i;
       $("#ver").append(
         `
@@ -132,14 +132,29 @@ $(function (params) {
       );
     });
   });
- $('#ver').on('mouseover','>div',function(params) {
-  console.log($(this));
-  $(this).find('.detail').css('display','inline-block')
- })
- $('#ver').on('mouseleave','>div',function(params) {
-  console.log($(this));
-  $(this).find('.detail').css('display','none')
- })
+  $("#ver").on("mouseover", ">div", function (params) {
+    // console.log($(this));
+    $(this).find(".detail").css("display", "inline-block");
+  });
+  $("#ver").on("mouseleave", ">div", function (params) {
+    console.log($(this));
+    $(this).find(".detail").css("display", "none");
+  });
+  var url_t = baseURL + "/v1/tools";
+  $.get(url_t, (data) => {
+    // console.log(data.data);
+    data.data.map((i) => {
+      const { toolImage, toolName } = i;
+      $("#b-b>ul").append(
+        `
+        <li>
+            <a href="#"><img src="img/mini_app/${toolImage}" alt=""></a>
+            <a href="#"><span>${toolName}</span></a>
+        </li>
+        `
+      );
+    });
+  });
 });
 
 // data.data.filter((i)=>{

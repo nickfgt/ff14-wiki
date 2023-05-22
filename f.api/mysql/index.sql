@@ -355,6 +355,42 @@ INSERT INTO ff14_versionContent (ff_id, other)
 VALUES(100, '- [金碟]新增妖精领风格跳跳乐');
 INSERT INTO ff14_versionContent (ff_id, other)
 VALUES(100, '- [系统]队伍列表可显示buff剩余时');
+create table ff14_utilityGadgets(
+        uid int primary key auto_increment,
+        toolImage varchar(32),
+        toolName varchar(32)
+);
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('clock.png', '采集时钟');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('peifang.png', '配方计算器');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('peizhuang.png', '配装计算器');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('shengchan.png', '生产模拟器');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('tool.png', '鸡排小工具');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('fish.png', '鱼糕钓鱼');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('blue.png', '青魔法书');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('bird.png', '陆行鸟染色');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('hunt.png', '狩猎车次表');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('huntclock.png', '狩猎时钟');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('tansuo.png', '探索笔记时钟');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('hunthot.png', '狩猎热点图');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('huanqiao.png', '幻巧拼图');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('skybook.png', '天书奇谈');
+INSERT INTO ff14_utilityGadgets (toolImage, toolName)
+VALUES('weicai.png', '仙人微彩');
+
 -- 创建新闻数据表
 -- create table ht_news(
 --     nid int primary key auto_increment,

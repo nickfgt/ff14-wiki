@@ -1,0 +1,15 @@
+#main {
+    .bd2 {
+        margin-top: 2em;
+        #bd2-items {
+            height: 26.5rem;
+            > .i-t {
+                width: 100%;
+                height: 3.5em;
+                border: 2px solid #fff;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
