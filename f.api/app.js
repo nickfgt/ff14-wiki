@@ -9,6 +9,7 @@ var ContentRouter = require("./routes/Content");
 var FocusRouter = require("./routes/focus");
 var ToolsRouter = require("./routes/tools");
 var SynthesisRouter = require("./routes/synthesis");
+var ScontentRouter = require("./routes/Scontent");
 //引入服务器
 
 //创建web服务器
@@ -25,6 +26,7 @@ app.use("/v1/content", ContentRouter);
 app.use("/v1/focus", FocusRouter);
 app.use("/v1/tools", ToolsRouter);
 app.use("/v1/synthesis", SynthesisRouter);
+app.use("/v1/Scontent", ScontentRouter);
 
 //处理404
 app.use(function (req, res, next) {

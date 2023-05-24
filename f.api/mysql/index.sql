@@ -445,9 +445,125 @@ INSERT INTO ff14_synthesisMenu (M_id, menu)
 VALUES(500, '外观/截图');
 INSERT INTO ff14_synthesisMenu (M_id, menu)
 VALUES(500, '其他玩法');
-
-
-
+create table ff14_menuContent(
+        uid int primary key auto_increment,
+        C_id VARCHAR(6),
+        content varchar(64)
+);
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[6.0]1-80级利用重建的练级手法指南');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[6.0]生产采集6.0攻略及提前准备');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[6.0]顶配禁断宏搓伊修加德/辉煌');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[6.0]从零开始的生产采集练级攻略');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]刻木匠');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]锻铁匠');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]铸甲匠');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]雕金匠');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]制革匠');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]裁衣匠');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]炼金');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]烹调师');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]采矿工');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]园艺工');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(110, '[职业任务材料]捕鱼人');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(120, '[6.1] 专家不垫的590hq手法');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(120, '[6.1] 590HQ生产/采集装');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(120, '[6.1] 非专家不垫的590hq96%手法');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(120, '[6.1] 6.1版本顶配禁断宏秒杀辉煌');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(120, '[6.X]6.x上星配方贴(6.05版本580HQ战斗装)');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(120, '[6.05]生产采集准备工作');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(120, '[6.05]580HQ无垫品质试宏与配套禁断方案(省钱量产版,武器只禁断cp)');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(120, '[6.0]生产采集职业提前准备工');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(130, '[5.41]高难配方大体流程');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(130, '[5.41]全等级手法');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(130, '[5.41]2778作业坚信');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(130, '[5.41]捕鱼冲分攻略');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(130, '[5.41]双采/钓鱼禁断方案');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(140, '[6.0]顶配禁断宏搓伊修加德/辉煌');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(140, '辉煌主手外观');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(140, '天钢主手流程');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(140, '天钢主手外观');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(140, '赐福主手流程/外观');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[工具]鱼糕');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '-');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[6.0]在星辰大海中垂钓吧！晓月之捕鱼人攻略');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[6.0]钓鱼相关资料');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[6.0]自用练级路线以及白紫票地点');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.55]净界鱼王终章&鱼皇前瞻信息整理');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]莫莫拉都能学会的海钓小课堂');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]海钓图志');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]海钓个人经验分享');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.2]海钓手册');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]海钓手册补充包');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]海钓攻略大纲');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]鱼眼改动');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]净界太公心得');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]海钓300w分成就');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[烟波]烟波新的攻略');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[烟波]烟波钓徒指北');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[烟波]烟波钓徒小tips');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[工具]渔人的直感');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.4]鱼王鱼饵对应表');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[5.1]捕鱼人小型攻略');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(150, '[成就]碧海/密林/黄沙之王');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(160, '分解开启');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(160, '[5.2]分解练级');
 -- 创建新闻数据表
 -- create table ht_news(
 --     nid int primary key auto_increment,
