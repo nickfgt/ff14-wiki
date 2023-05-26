@@ -36,5 +36,8 @@ $(function (params) {
     $('#rbl-ul').on('mouseover','>li',function(params) {
       $(this).addClass('active').siblings().removeClass('active');
     })
+    $('#rbl-ul').on('mouseout','>li',function(params) {
+      $(this).removeClass('active');
+    })
   });
 });
