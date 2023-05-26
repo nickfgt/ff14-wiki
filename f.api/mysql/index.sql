@@ -393,58 +393,59 @@ VALUES('weicai.png', '仙人微彩');
 create table ff14_synthesisMenu(
         uid int primary key auto_increment,
         M_id VARCHAR(6),
-        Menu varchar(32)
+        Menu varchar(32),
+        enid VARCHAR(6)
 );
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(100, '如何升级');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(100, '相关宏');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(100, '重建伊修加德');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(100, '赐福/天钢主手');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(100, '捕鱼人');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(100, '分解');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(200, '如何升级');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(200, '青魔技能   ');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(200, '青之副本');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(200, '假面狂欢');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(300, '时尚品鉴');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(300, '九宫幻卡');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(300, '陆行鸟竞赛');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(300, '多玛方城战');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(300, '萌宠之王');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(300, '其他');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(400, '介绍');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(400, '装修');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(400, '部队工坊');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(500, '死宫/天宫');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(500, '狩猎');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(500, '挖宝');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(500, '演奏');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(500, '外观/截图');
-INSERT INTO ff14_synthesisMenu (M_id, menu)
-VALUES(500, '其他玩法');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(100, '如何升级','110');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(100, '相关宏','120');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(100, '重建伊修加德','130');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(100, '赐福/天钢主手','140');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(100, '捕鱼人','150');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(100, '分解','160');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(200, '如何升级','170');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(200, '青魔技能','180');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(200, '青之副本','190');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(200, '假面狂欢','200');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(300, '时尚品鉴','210');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(300, '九宫幻卡','220');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(300, '陆行鸟竞赛','230');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(300, '多玛方城战','240');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(300, '萌宠之王','250');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(300, '其他','260');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(400, '介绍','270');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(400, '装修','280');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(400, '部队工坊','290');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(500, '死宫/天宫','300');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(500, '狩猎','310');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(500, '挖宝','320');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(500, '演奏','330');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(500, '外观/截图','340');
+INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
+VALUES(500, '其他玩法','350');
 create table ff14_menuContent(
         uid int primary key auto_increment,
         C_id VARCHAR(6),
@@ -564,6 +565,36 @@ INSERT INTO ff14_menuContent (C_id, content)
 VALUES(160, '分解开启');
 INSERT INTO ff14_menuContent (C_id, content)
 VALUES(160, '[5.2]分解练级');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(170, '[双人]0-70升级地点推荐');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(170, '[教学]一键切换宏');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(170, '青魔武器');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(170, '青魔任务');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(180, '青魔法书');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(180, '青魔技能学习指南');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(180, '[5.45][T/D/H青]必学技能推荐');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(180, '[5.45]D青指北');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(190, '[5.15]魔界花的产后护理');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(190, '[5.15]从零起步到巴哈机神');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(190, '[5.45]魔界花MT位青魔心得');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(200, '假面狂欢介绍');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(200, '[4.5]1-25简要文字攻略');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(200, '[5.15]26-30简要文字攻略');
+INSERT INTO ff14_menuContent (C_id, content)
+VALUES(200, '[5.45]假面狂欢视频攻略');
 -- 创建新闻数据表
 -- create table ht_news(
 --     nid int primary key auto_increment,

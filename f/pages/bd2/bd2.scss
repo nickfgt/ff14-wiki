@@ -98,21 +98,52 @@
                             justify-content: start;
                             align-items: center;
                             > li {
-                               display: flex;
-                               align-items: center;
-                               justify-content: center;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 width: 100%;
-                                height: 3.6rem;
-                                &.active{
+                                height: 3.7rem;
+                                &.active {
                                     background-color: #232329;
                                 }
                             }
                         }
                     }
                     > .bl-r {
-                        height: 100%;
+                        height: 23.1rem;
                         width: 82%;
                         background-color: #232329;
+                        overflow: scroll;
+                        > ul {
+                            height: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-content: flex-start;
+                            > li {
+                                height: 3rem;
+                                display: flex;
+                                margin: 1.5%;
+                                justify-content: center;
+                                align-items: center;
+                                // border: 1px solid #fff;
+                                width: 45%;
+
+                                > p {
+                                    text-align: center;
+                                    width: 12rem;
+                                    color: #cccccc;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                &.active {
+                                    background-color: #17171b;
+                                    > P {
+                                        color: #ffffff;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
