@@ -1,30 +1,165 @@
-#main{
-    .bd5{
+#main {
+    .bd5 {
         pointer-events: all;
         width: 100%;
         margin-top: 2em;
-        #bd5-items{
+        #bd5-items {
             width: 100%;
-            border: 1px solid #fff;
+            // border: 1px solid #fff;
             height: 28em;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            .i-t{
-                border: 1px solid #fff;
+            .i-t {
+                // border: 1px solid #fff;
                 width: 100%;
                 height: 2.9rem;
-                .t-l{
-                    w
-                    .l-l{
+                .t-l {
+                    user-select: none;
+                    cursor: default;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    .l-l {
+                        width: 28%;
+                        padding: 5px;
                         display: flex;
                         align-items: end;
+                        justify-content: space-around;
+                        > p {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .t-r {
+                        width: 50%;
+                        height: 100%;
+                        > ul {
+                            border-radius: 8px;
+                            background-color: #232329;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            > li {
+                                cursor: pointer;
+                                font-weight: bold;
+                                display: flex;
+                                height: 100%;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 1.1rem;
+                                color: #ccc;
+                                // transition: .3s linear;
+                                &.active {
+                                    color: #fff;
+                                    // padding-bottom: -1px;
+                                    border-bottom: 2px solid;
+                                    border-image: linear-gradient(90deg, #128bf5, #f29b44) 1;
+                                }
+                            }
+                        }
                     }
                 }
             }
-            .i-b{
+            .i-b {
                 width: 100%;
                 height: 23.5rem;
+                // border: 1px solid #fff;
+                display: flex;
+                border-radius: 8px;
+                overflow: hidden;
+                > .b-l {
+                    height: 100%;
+                    width: 7.5%;
+                    background-color: #303033;
+                    > ul {
+                        width: 100%;
+                        > li {
+                            user-select: none;
+                            cursor: pointer;
+                            width: 100%;
+                            height: 2.7rem;
+                            font-size: 0.8rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &.active {
+                                background-color: #232329;
+                            }
+                        }
+                    }
+                }
+                > .b-r {
+                    height: 100%;
+                    width: 92.5%;
+                    background-color: #232329;
+                    > .r-t {
+                        width: 100%;
+                        height: 8%;
+                        display: flex;
+                        justify-content: end;
+                        padding-right: 20px;
+                        >p{
+                            font-size: .8rem;
+                            cursor: default;
+                            user-select: none;
+                        }
+                        >ul{
+                            margin: 0 8px;
+                            display: flex;
+                            >li{
+                                user-select: none;
+                                cursor: pointer;
+                                margin: 0 8px;
+                                font-size: .8rem;
+                                color: #cccccc;
+                              
+                                &.on{
+                                    color: #ffffff;
+                                    &::after{
+                                        content: '↓';
+                                    }
+                                }
+                                &.off{
+                                    color: #ffffff;
+                                    &::after{
+                                        content: '↑';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    > .r-b {
+                        overflow: scroll;
+                        overflow-x: hidden;
+                        width: 101%;
+                        height: 92%;
+                        ul {
+                            padding: 0 12px;
+                            display: flex;
+                            justify-content: start;
+                            flex-wrap: wrap;
+                            width: 100%;
+                            > li {
+                                margin-bottom: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                width: 20%;
+                                img {
+                                    width: 13rem;
+                                }
+                                p {
+                                    width: 13rem;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

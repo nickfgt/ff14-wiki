@@ -10,6 +10,8 @@ var FocusRouter = require("./routes/focus");
 var ToolsRouter = require("./routes/tools");
 var SynthesisRouter = require("./routes/synthesis");
 var ScontentRouter = require("./routes/Scontent");
+var videoMenuRouter = require("./routes/videoMenu");
+var vContentRouter = require("./routes/vContent");
 //引入服务器
 
 //创建web服务器
@@ -27,6 +29,8 @@ app.use("/v1/focus", FocusRouter);
 app.use("/v1/tools", ToolsRouter);
 app.use("/v1/synthesis", SynthesisRouter);
 app.use("/v1/Scontent", ScontentRouter);
+app.use("/v1/videoMenu", videoMenuRouter);
+app.use("/v1/vContent", vContentRouter);
 
 //处理404
 app.use(function (req, res, next) {

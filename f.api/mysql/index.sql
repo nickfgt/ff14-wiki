@@ -396,56 +396,56 @@ create table ff14_synthesisMenu(
         Menu varchar(32),
         enid VARCHAR(6)
 );
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(100, '如何升级','110');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(100, '相关宏','120');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(100, '重建伊修加德','130');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(100, '赐福/天钢主手','140');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(100, '捕鱼人','150');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(100, '分解','160');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(200, '如何升级','170');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(200, '青魔技能','180');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(200, '青之副本','190');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(200, '假面狂欢','200');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(300, '时尚品鉴','210');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(300, '九宫幻卡','220');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(300, '陆行鸟竞赛','230');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(300, '多玛方城战','240');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(300, '萌宠之王','250');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(300, '其他','260');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(400, '介绍','270');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(400, '装修','280');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(400, '部队工坊','290');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(500, '死宫/天宫','300');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(500, '狩猎','310');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(500, '挖宝','320');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(500, '演奏','330');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(500, '外观/截图','340');
-INSERT INTO ff14_synthesisMenu (M_id, menu,enid)
-VALUES(500, '其他玩法','350');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(100, '如何升级', '110');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(100, '相关宏', '120');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(100, '重建伊修加德', '130');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(100, '赐福/天钢主手', '140');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(100, '捕鱼人', '150');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(100, '分解', '160');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(200, '如何升级', '170');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(200, '青魔技能', '180');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(200, '青之副本', '190');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(200, '假面狂欢', '200');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(300, '时尚品鉴', '210');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(300, '九宫幻卡', '220');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(300, '陆行鸟竞赛', '230');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(300, '多玛方城战', '240');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(300, '萌宠之王', '250');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(300, '其他', '260');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(400, '介绍', '270');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(400, '装修', '280');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(400, '部队工坊', '290');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(500, '死宫/天宫', '300');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(500, '狩猎', '310');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(500, '挖宝', '320');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(500, '演奏', '330');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(500, '外观/截图', '340');
+INSERT INTO ff14_synthesisMenu (M_id, menu, enid)
+VALUES(500, '其他玩法', '350');
 create table ff14_menuContent(
         uid int primary key auto_increment,
         C_id VARCHAR(6),
@@ -595,6 +595,308 @@ INSERT INTO ff14_menuContent (C_id, content)
 VALUES(200, '[5.15]26-30简要文字攻略');
 INSERT INTO ff14_menuContent (C_id, content)
 VALUES(200, '[5.45]假面狂欢视频攻略');
+create table ff14_videoMenu(
+        uid int primary key auto_increment,
+        V_id VARCHAR(6),
+        Menu varchar(32),
+        Meid VARCHAR(6)
+);
+INSERT INTO ff14_videoMenu (V_id, Menu, Meid)
+VALUES(100, 'CG&PV', '110');
+INSERT INTO ff14_videoMenu (V_id, Menu, Meid)
+VALUES(100, '中文服Live', '120');
+INSERT INTO ff14_videoMenu (V_id, Menu, Meid)
+VALUES(100, '国际服Live', '130');
+INSERT INTO ff14_videoMenu (V_id, Menu, Meid)
+VALUES(100, '音乐会', '140');
+INSERT INTO ff14_videoMenu (V_id, Menu, Meid)
+VALUES(100, '有声读物', '150');
+INSERT INTO ff14_videoMenu (V_id, Menu, Meid)
+VALUES(100, '杂谈采访', '160');
+INSERT INTO ff14_videoMenu (V_id, Menu, Meid)
+VALUES(100, '官方广告', '170');
+INSERT INTO ff14_videoMenu (V_id, Menu, Meid)
+VALUES(130, '装修技巧', '180');
+create table ff14_VMContent(
+        uid int primary key auto_increment,
+        VC_id VARCHAR(6),
+        content varchar(64),
+        img VARCHAR(64),
+        VADD VARCHAR(32),
+        VUP VARCHAR(32),
+        Vgather VARCHAR(32),
+        Vplay VARCHAR(32)
+);
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【FF14】2013年FF14发布会吉田直树闭幕演说',
+                'e317b47f02faae3e029a4ad7c967a6dafd0c17a1.jpg',
+                '15',
+                '15',
+                '7753',
+                '37375'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【熟肉】PAX Prime 2015 ~KOJI和祖坚的狂野之旅~',
+                '9a0e6745044f05896c748e016263448025e05b43.jpg',
+                '13',
+                '14',
+                '5374',
+                '73453'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【熟肉】PAX WEST 2017 KOJI FOX访谈',
+                'f92fc10e9f0fc6d35670f8ddd9f130c72342d67e.jpg',
+                '14',
+                '13',
+                '7534',
+                '45375'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【熟肉】PAX EAST 2018 FF14主线剧情编剧和英文本土化主管访谈',
+                'a5003ca9b9ebd9a147f98e4a5f7125b0e43ebe19.jpg',
+                '11',
+                '12',
+                '7554',
+                '45375'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【最终幻想14】2018 E3制作人来信',
+                '711c1b1361da94a40a4aa180d567f21cd4f1906c.png',
+                '12',
+                '11',
+                '5387',
+                '43753'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【最终幻想14】国际服5周年庆LIVE',
+                '26cea999ab96440ac64d43fafe0a4231859340b0.png',
+                '10',
+                '10',
+                '2437',
+                '73852'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【最终幻想14】2018拉斯维加斯粉丝节',
+                '548d4665fb9e20e5ad2c22a74c66d6b305834c27.jpg',
+                '8',
+                '9',
+                '9757',
+                '75393'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【中字全程】最终幻想14 北美粉丝嘉年华2018 5.0主题演讲',
+                '3ae33e06cc5ba98e9874806a9033717a6066ad87.jpg',
+                '9',
+                '8',
+                '5375',
+                '75375'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【最终幻想14】2019巴黎粉丝节',
+                '3959de893e1a4d73da24b099efd47c2083e08c7d.jpg',
+                '6',
+                '7',
+                '7534',
+                '37531'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【中字全程】最终幻想14 欧洲粉丝嘉年华2019 5.0主题演讲',
+                'a3017d09c63edb8fda7ee03bf1546e416570bcb5.jpg',
+                '7',
+                '6',
+                '3758',
+                '97535'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【FF14】东京粉丝节2019 南条爱乃 对话吉田P/月下彼岸花/千年之晓',
+                '069dcc1f66f8a0d4cfd9a78049a1c326d428d86b.jpg',
+                '4',
+                '5',
+                '7534',
+                '75348'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【最终幻想14】2019东京粉丝节',
+                'e04e43f5f8e47f8e0650062c28089e5f4a7d8431.jpg',
+                '5',
+                '4',
+                '7539',
+                '35757'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【中字全程】最终幻想14 日本粉丝嘉年华2019 5.0主题演讲 & 开幕式',
+                'd5b5ba3c9d637e26051d306bff2170b85defaf72.jpg',
+                '2',
+                '3',
+                '7397',
+                '45387'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【最终幻想14】第50回制作人来信',
+                '11ec81a8bca391ca7ab3446e49a845852f354164.jpg',
+                '3',
+                '2',
+                '7975',
+                '97537'
+        );
+INSERT INTO ff14_VMContent (
+                VC_id,
+                content,
+                img,
+                VADD,
+                VUP,
+                Vgather,
+                Vplay
+        )
+VALUES(
+                130,
+                '【最终幻想14】第51回制作人来信【部分简要翻译】',
+                'fd48b2bfd9ed61255cb2574c2abe0d94097aab01.jpg',
+                '1',
+                '1',
+                '7534',
+                '78357'
+        );
 -- 创建新闻数据表
 -- create table ht_news(
 --     nid int primary key auto_increment,

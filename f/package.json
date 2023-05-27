@@ -10,6 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.6.4"
+    "cheerio": "^1.0.0-rc.12",
+    "chromedriver": "^113.0.0",
+    "jquery": "^3.6.4",
+    "request": "^2.88.2",
+    "selenium": "^2.20.0",
+    "selenium-webdriver": "^4.9.2"
   }
 }
