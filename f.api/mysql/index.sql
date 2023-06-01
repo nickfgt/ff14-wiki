@@ -897,6 +897,9 @@ VALUES(
                 '7534',
                 '78357'
         );
+
+INSERT INTO ff14_VMContent (VC_id,content,img,VADD,VUP,Vgather,Vplay)
+VALUES(130,'【最终幻想14】第51回制作人来信【部分简要翻译】','fd48b2bfd9ed61255cb2574c2abe0d94097aab01.jpg','1','1','7534','78357');
 -- 创建新闻数据表
 -- create table ht_news(
 --     nid int primary key auto_increment,
