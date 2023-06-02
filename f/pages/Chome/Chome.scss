@@ -16,13 +16,15 @@
                     height: 80%;
                     // border: 1px solid #fff;
                     width: 13.5rem;
+                    font-size: 0.8rem;
                     > div {
                         height: 50%;
                         display: flex;
                         // flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        > select{
+                        > select {
+                            margin-left: 5px;
                             overflow: scroll;
                             height: 1.6rem;
                             width: 10.5rem;
@@ -31,10 +33,9 @@
                             outline: none;
                             border: none;
                         }
-                      
-              
                     }
-                    >input{
+                    > input {
+                        margin-top: 3px;
                         height: 1.6rem;
                         margin-left: 6.8px;
                         // display: none;
@@ -46,9 +47,130 @@
                     }
                 }
                 > .btn {
-                    height: 100%;
-                    border: 1px solid #fff;
+                    height: 80%;
+                    // border: 1px solid #fff;
                     width: 5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    cursor: pointer;
+                    user-select: none;
+                    > button {
+                        height: 36%;
+                        border-radius: 4px;
+                        width: 100%;
+                        border: 1px solid #fff;
+                        transition: 0.3s linear;
+                        &:hover {
+                            background-color: #a10eb8;
+                            border-color: #a10eb8;
+                        }
+                    }
+                    > .search {
+                        background-color: #a10eb8;
+                        border-color: #a10eb8;
+                    }
+                }
+            }
+            > .C-b {
+                margin-top: 20px;
+                width: 100%;
+                border-radius: 8px;
+                // border: 1px solid #fff;
+                overflow: hidden;
+                > ul {
+                    width: 100%;
+                    > li {
+                        width: 100%;
+                        // height: 100px;
+                        > div {
+                            > .cbl-t {
+                                display: flex;
+                                > div {
+                                    background-color: #232329;
+                                    padding: 20px 0;
+                                    width: 25%;
+                                    font-size: 0.7rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    border-right: 1px solid #303033;
+                                    border-bottom: 1px solid #303033;
+                                }
+                                > .item {
+                                    > ul {
+                                        margin-bottom: -10px;
+                                        > li {
+                                            margin-bottom: 10px;
+                                        }
+                                    }
+                                }
+                                > .countdown {
+                                    border-right: none;
+                                }
+                            }
+                            > .cbl-b {
+                                width: 100%;
+                                height: 3rem;
+                                border: 1px solid #fff;
+                                display: flex;
+                                > div {
+                                    height: 100%;
+                                }
+                                .icon {
+                                    margin-left: 2rem;
+                                    width: 5rem;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    height: 100%;
+                                    svg {
+                                        fill: #606063;
+                                        display: block;
+                                        float: left;
+                                    }
+                                }
+                                > .line {
+                                    width: 40rem;
+                                    height: 1rem;
+                                    border-radius: 0.5rem;
+                                    background-image: linear-gradient(90deg, #949ea7, #d1d1d1);
+                                    // background-color: #606063;
+                                    position: relative;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    overflow: hidden;
+                                    > .line-bar {
+                                        width: 0%;
+                                        height: 100%;
+                                        border-radius: 0.5rem;
+                                        background-image: linear-gradient(90deg, #650ce6, #a10eb8);
+                                        position: relative;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                    }
+                                }
+                                > .btn {
+                                    margin-left: 2rem;
+                                    position: relative;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    width: 4rem;
+                                    height: 70%;
+                                    // border: 1px solid #fff;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: .8rem;
+                                    border-radius: 4px;
+                                    // background-image: linear-gradient(90deg, #a10eb8, #a80abf);
+                                    background-image: linear-gradient(90deg, #8a8a8a, #c5c5c5);
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
