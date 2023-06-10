@@ -109,7 +109,7 @@ $(function (params) {
                     `);
             });
           });
-        }else if (index == 3 && n1 == 1) {
+        } else if (index == 3 && n1 == 1) {
           $("#rb-ul").empty();
           var url_vc = baseURL + "/v1/vContent/Vplayon";
           console.log(meid);
@@ -184,7 +184,7 @@ $(function (params) {
                       `);
             });
           });
-        }else if (index == 3 && n1 == 2) {
+        } else if (index == 3 && n1 == 2) {
           $("#rb-ul").empty();
           var url_vc = baseURL + "/v1/vContent/Vplayoff";
           $.get(url_vc, { VC_id: meid }, (data) => {

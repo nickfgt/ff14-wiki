@@ -1,6 +1,6 @@
 var createError = require("http-errors");
 var cors = require("cors");
-var express = require("express");
+var express = require("express"); 
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
@@ -12,6 +12,7 @@ var SynthesisRouter = require("./routes/synthesis");
 var ScontentRouter = require("./routes/Scontent");
 var videoMenuRouter = require("./routes/videoMenu");
 var vContentRouter = require("./routes/vContent");
+var ClockRouter = require("./routes/Clock");
 //引入服务器
 
 //创建web服务器
@@ -31,6 +32,7 @@ app.use("/v1/synthesis", SynthesisRouter);
 app.use("/v1/Scontent", ScontentRouter);
 app.use("/v1/videoMenu", videoMenuRouter);
 app.use("/v1/vContent", vContentRouter);
+app.use("/v1/Clock", ClockRouter);
 
 //处理404
 app.use(function (req, res, next) {

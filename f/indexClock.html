@@ -37,7 +37,8 @@
             const h = location.hash.substr(1)
             window.reachBottom = null
             const param = new URLSearchParams(h)
-            const p = param.get('p') || 'Chome'
+            const p = param.get('p') || 'Chome';
+            console.log(p);
             const path = `./PAGES/${p}/${p}.html`
             $('#main').load(path, function () {
                 $(this).append(` <link rel="stylesheet" href="pages/${p}/${p}.css">`)

@@ -897,9 +897,72 @@ VALUES(
                 '7534',
                 '78357'
         );
-
-INSERT INTO ff14_VMContent (VC_id,content,img,VADD,VUP,Vgather,Vplay)
-VALUES(130,'【最终幻想14】第51回制作人来信【部分简要翻译】','fd48b2bfd9ed61255cb2574c2abe0d94097aab01.jpg','1','1','7534','78357');
+INSERT INTO ff14_VMContent (VC_id, content, img, VADD, VUP, Vgather, Vplay)
+VALUES(
+                130,
+                '【最终幻想14】第51回制作人来信【部分简要翻译】',
+                'fd48b2bfd9ed61255cb2574c2abe0d94097aab01.jpg',
+                '1',
+                '1',
+                '7534',
+                '78357'
+        );
+create table ff14_Clock(
+        uid int primary key auto_increment,
+        CL_id VARCHAR(32),
+        content varchar(128),
+        map VARCHAR(128),
+        lev VARCHAR(128),
+        countdown VARCHAR(128)
+);
+INSERT INTO ff14_Clock (CL_id, content, map, lev, countdown)
+VALUES(
+                100,
+                '<li>收藏用辉铜矿</li>
+                <li>收藏用黄铁矿</li>
+                <li>收藏用褐铁矿</li>',
+                '<span>东拉诺西亚</span>
+                <span>X:19.3, Y:33.1</span>',
+                '<span>等级 50</span>
+                <span>采矿工</span>',
+                2
+        );
+INSERT INTO ff14_Clock (
+                CL_id,
+                content,
+                map,
+                lev,
+                countdown
+        )
+VALUES(
+                100,
+                '<li>火之晶簇</li>
+                <li>3级拉诺西亚土壤</li>
+                <li>无属性水晶</li>
+                <li>暗物质晶簇</li>',
+                '<span>东拉诺西亚</span>
+                <span>X:13.8, Y:23.8</span>',
+                '<span>等级 50</span>
+                <span>园艺工</span>',
+                3
+        );
+INSERT INTO ff14_Clock (
+                CL_id,
+                content,
+                map,
+                lev,
+                countdown
+        )
+VALUES(
+                100,
+                '<li>迷迭香</li>
+                <li>马兹拉雅草</li>',
+                '<span>黑衣森林东部林区</span>
+                <span>X:19.3, Y:33.1</span>',
+                '<span>等级 50</span>
+                <span>园艺工</span>',
+                4
+        );
 -- 创建新闻数据表
 -- create table ht_news(
 --     nid int primary key auto_increment,
